@@ -8,7 +8,7 @@
     "existencia": 11
   },
   {
-    "id": 2,
+    "id": 1,
     "nombre": "Model 3",
     "marca": "Tesla",
     "precio": 150000,
@@ -16,7 +16,7 @@
     "existencia": 15
   },
   {
-    "id": 3,
+    "id": 2,
     "nombre": "Model X",
     "marca": "Tesla",
     "precio": 210000,
@@ -24,7 +24,7 @@
     "existencia": 5
   },
   {
-    "id": 4,
+    "id": 3,
     "nombre": "Model Y",
     "marca": "Tesla",
     "precio": 225000,
@@ -32,7 +32,7 @@
     "existencia": 25
   },
   {
-    "id": 5,
+    "id": 4,
     "nombre": "R8",
     "marca": "Audi",
     "precio": 280000,
@@ -40,7 +40,7 @@
     "existencia": 7
   },
   {
-    "id": 6,
+    "id": 5,
     "nombre": "Aventador",
     "marca": "Lamborghini",
     "precio": 680000,
@@ -53,6 +53,6 @@
     "precio": 750,
     "descripcion": "Rico sabor casero",
     "existencia": 22,
-    "id": 7
+    "id": 6
   }
 ]
