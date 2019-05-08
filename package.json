@@ -1,0 +1,17 @@
+{
+  "name": "tarea8",
+  "version": "1.0.0",
+  "description": "Tarea 8 Web",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Gutierrez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
