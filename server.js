@@ -10,6 +10,9 @@ const products = require('./routes/api/products');
 // Inicalizar middelware, realiza lo mismo que el body-parser
 app.use(express.json({extended: false}));
 
+// Api corriendo
+app.get('/', (req, res) => res.send('API Running'));
+
 // Definir las rutas para los archivos api
 app.use('/usuarios', users);
 app.use('/producto', products);
