@@ -53,11 +53,11 @@ router.get('/:id', (req, res) => {
     const product = products.find(pr => pr.id == id);
 
     if (product) {
-        res.json(product);
+        res.status(201).json(product);
         return;
     }
 
-    res.json({error: "no existe"});
+    res.status(400).json({error: "No existe"});
 });
 
 // @route   PATCH producto/:id
@@ -71,7 +71,7 @@ router.patch('/:id', auth, (req, res) => {
     if (updateProduct(id, product)) {
         res.json(product);
     } else {
-        res.status(400).send({ error: "Invalid ID" })
+        res.status(400).send({ error: "Id o atributos invalidos" })
     }
 });
 
