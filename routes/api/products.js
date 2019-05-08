@@ -66,7 +66,9 @@ router.get('/:id', (req, res) => {
 router.patch('/:id', auth, (req, res) => {
     const {id} = req.params;
 
-    if (updateProduct(id, req.body)) {
+    const product = req.body;
+
+    if (updateProduct(id, product)) {
         res.json(product);
     } else {
         res.status(400).send({ error: "Invalid ID" })
@@ -77,34 +79,18 @@ router.patch('/:id', auth, (req, res) => {
 const updateProduct = (id, producto) => {
     let pos = products.findIndex(pr => pr.id == id);
 
-    if (pos) {
+    if (pos >= 0) {
         products[pos].nombre = (producto.nombre) ? producto.nombre : products[pos].nombre;
         products[pos].marca = (producto.marca) ? producto.marca : products[pos].marca;
+        products[pos].descripcion = (producto.descripcion) ? producto.descripcion: products[pos].descripcion;
+        products[pos].precio = (producto.precio) ? (producto.precio >= 0 ? producto.precio : products[pos].precio) : products[pos].precio;
+        products[pos].existencia = (producto.existencia) ? (producto.existencia >= 0 ? producto.existencia : products[pos].existencia) : productos[pos].existencia;
 
-        Object.assign(products[pos], producto);
         fs.writeFileSync('./data/products.json', JSON.stringify(products));
         return true;
     } else{
         return false;
     }
 };
-
-//
-// app.route('/producto')
-//     .post(auth, (req, res) => {
-//         let body = req.body;
-//         body.id = productos.length + 1;
-//
-//         if (body.nombre && body.marca && body.precio > 0 && body.descripcion && body.existencia > 0) {
-//             productos.push(body);
-//             fs.writeFileSync('productos.json', JSON.stringify(productos));
-//             res.status(201).send(body);
-//             return;
-//         }
-//
-//         res.status(400).send({
-//             error: "Faltan atributos en el body"
-//         })
-//     });
 
 module.exports = router;

@@ -50,9 +50,9 @@
   {
     "nombre": "Pastel",
     "marca": "Dairy Queen",
-    "precio": 250,
-    "descripcion": "Rico pastel casero",
-    "existencia": 28,
+    "precio": 750,
+    "descripcion": "Rico sabor casero",
+    "existencia": 22,
     "id": 7
   }
 ]
