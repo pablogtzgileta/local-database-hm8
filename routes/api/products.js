@@ -60,8 +60,8 @@ router.get('/:id', (req, res) => {
     res.json({error: "no existe"});
 });
 
-// @route   POST producto/:id
-// @desc    Modificar producto
+// @route   PATCH producto/:id
+// @desc    Actualizar producto mediante ID
 // @access  Private
 router.patch('/:id', auth, (req, res) => {
     const {id} = req.params;
