@@ -40,7 +40,7 @@ app.route('/producto')
         res.status(400).send({
             error: "Faltan atributos en el body"
         })
-    })
+    });
 
 app.route('/producto/:id')
     .get((req, res) => {

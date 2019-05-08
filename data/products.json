@@ -1,22 +1,58 @@
 [
   {
     "id": 0,
-    "nombre": "Jay Cohen",
-    "marca": "ISC",
-    "precio": 75
-    "descripcion": 75
-    "existencia": 75
-  },
-  {
-    "id": 1,
-    "nombre": "Sara Barton",
-    "carrera": "ISC",
-    "calificacion": 73
+    "nombre": "Model S",
+    "marca": "Tesla",
+    "precio": 200000,
+    "descripcion": "Power is power",
+    "existencia": 11
   },
   {
     "id": 2,
-    "nombre": "Isaac Lloyd",
-    "carrera": "IE",
-    "calificacion": 51
+    "nombre": "Model 3",
+    "marca": "Tesla",
+    "precio": 150000,
+    "descripcion": "An electric car perfect for anyone",
+    "existencia": 15
+  },
+  {
+    "id": 3,
+    "nombre": "Model X",
+    "marca": "Tesla",
+    "precio": 210000,
+    "descripcion": "An amazing electric car",
+    "existencia": 5
+  },
+  {
+    "id": 4,
+    "nombre": "Model Y",
+    "marca": "Tesla",
+    "precio": 225000,
+    "descripcion": "Really fast car",
+    "existencia": 25
+  },
+  {
+    "id": 5,
+    "nombre": "R8",
+    "marca": "Audi",
+    "precio": 280000,
+    "descripcion": "Fast car",
+    "existencia": 7
+  },
+  {
+    "id": 6,
+    "nombre": "Aventador",
+    "marca": "Lamborghini",
+    "precio": 680000,
+    "descripcion": "Exotic and sexy car",
+    "existencia": 10
+  },
+  {
+    "nombre": "Pastel",
+    "marca": "Dairy Queen",
+    "precio": 250,
+    "descripcion": "Rico pastel casero",
+    "existencia": 28,
+    "id": 7
   }
 ]

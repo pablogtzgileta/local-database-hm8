@@ -1,20 +1,14 @@
 [
   {
     "id": 0,
-    "nombre": "Jay Cohen",
-    "carrera": "ISC",
-    "calificacion": 75
+    "name": "Jose Chuy",
+    "username": "eljeringas",
+    "password": "1234567"
   },
   {
     "id": 1,
-    "nombre": "Sara Barton",
-    "carrera": "ISC",
-    "calificacion": 73
-  },
-  {
-    "id": 2,
-    "nombre": "Isaac Lloyd",
-    "carrera": "IE",
-    "calificacion": 51
+    "name": "Pablo Gutierrez",
+    "username": "pablogtz",
+    "password": "123456"
   }
 ]
