@@ -75,7 +75,7 @@ router.patch('/:id', auth, (req, res) => {
     }
 });
 
-
+// Actualizar producto
 const updateProduct = (id, producto) => {
     let pos = products.findIndex(pr => pr.id == id);
 

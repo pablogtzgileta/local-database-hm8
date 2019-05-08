@@ -6,7 +6,7 @@ const keys = JSON.parse(fs.readFileSync('./config/keys.json'));
 
 
 module.exports = (req, res, next) => {
-    // Get token from header
+    // Obtener tokens del header
     const token = req.header('x-auth');
     const xuser = req.header('x-user');
 

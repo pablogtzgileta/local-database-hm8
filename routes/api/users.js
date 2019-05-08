@@ -52,6 +52,8 @@ router.post('/logout', auth, (req, res) => {
     res.status(200).send('User logged out');
 });
 
+
+// Genera una llave aleatoria con letras y numeros
 function makeid(length) {
     var result           = '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
